@@ -322,6 +322,7 @@ class TIG_Buckaroo3Extended_Model_Response_Abstract extends TIG_Buckaroo3Extende
 
         $this->sendDebugEmail();
         header('Location:' . $returnUrl);
+        exit;
     }
 
     protected function _rejected($message = '')
